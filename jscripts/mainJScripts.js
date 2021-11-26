@@ -1,0 +1,3 @@
+function setBodyClass(){
+    return "Test";
+}
