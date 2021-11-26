@@ -2,7 +2,7 @@
 require $_SERVER["DOCUMENT_ROOT"]."/controller/sConstrMain.php";
 include $_SERVER["DOCUMENT_ROOT"]."/imports/navigation.php";
 include $_SERVER["DOCUMENT_ROOT"]."/imports/copyright.php";
-$s = new sConstrMain( "testing", "Dies ist die Testingseite");
+$s = new sConstrMain( "StringService", "Dies ist die Testingseite");
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -98,7 +98,7 @@ $s = new sConstrMain( "testing", "Dies ist die Testingseite");
                 ?>
             </div>
             <div class="content">
-
+                <article>
 
                 </article>
             </div>

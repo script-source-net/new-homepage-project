@@ -9,7 +9,7 @@ require $_SERVER['DOCUMENT_ROOT'] . "/controller/sConstrMain.php";
 //require $_SERVER['DOCUMENT_ROOT'] . "/config/config.php";
 include $_SERVER["DOCUMENT_ROOT"]."/imports/navigation.php";
 include $_SERVER["DOCUMENT_ROOT"]."/imports/copyright.php";
-$s = new sConstrMain("gen","TestHome","Testing Home");
+$s = new sConstrMain("gen","String Service","String Service");
 $s->getSiteBeginning();
 
 $pdo = new PDO('mysql:host=' . $s->getDbCredentials('host') . ';dbname=' . $s->getDbCredentials('db') . ';', '' . $s->getDbCredentials('user') . '', '' . $s->getDbCredentials('pw') . '');

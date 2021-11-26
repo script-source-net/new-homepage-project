@@ -17,12 +17,8 @@ class sNavMain
         return ["/index.php" => "Home",
             $this->getSitesFolder()."service.php" => "Service",
             $this->getSitesFolder()."impressum.php" => "Impressum",
-            $this->getSitesFolder()."testings.php" => "Testing",
-            $this->getSitesFolder()."testing2.php" => "Testing2",
-            $this->getSitesFolder()."testing3.php" => "Testing3",
-            $this->getTestFolder()."index.php" => "TestHome",
-            //sNavMain::getTestFolder()."users.view.php" => "Users View",
-            $this->getSitesFolder()."mytest.html" => "test"];
+            $this->getStringServiceFolder()."index.php" => "String Service",
+            $this->getSitesFolder()."testings.php" => "Testing"];
     }
     public function generateNav(){
         $outString = "<ul>";
@@ -45,8 +41,8 @@ class sNavMain
         return $navList;
     }
 
-    private function getTestFolder(){
-        return "/testing/";
+    private function getStringServiceFolder(){
+        return "/StringService/";
     }
 
 
